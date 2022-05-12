@@ -1,0 +1,69 @@
+body{
+    margin-top:20%;
+    margin-bottom: 20%;
+    height: 150px;
+    background: #7e0404 ;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg{
+  background-color: rgb(5, 89, 95);
+  border-radius: 5px;
+ }
+.hour-marker {
+    fill:transparent;
+    stroke:white;
+    stroke-width: 7;
+    stroke-dasharray: 0.2 ,4.8;
+    stroke-dashoffset: 0.1;
+   
+  }
+  .hour-markers {
+    fill: transparent;
+    stroke: rgb(5, 89, 95);
+    stroke-width: 7;
+    stroke-dasharray: 0.2, 14.8;
+    stroke-dashoffset: 0.1;
+  }
+  
+  
+  #text{
+    color: white;
+    cursor: pointer;
+  }
+  
+  .minute-marker {
+    fill: transparent;
+    stroke: rgb(5, 89, 95);
+    stroke-width: 7;
+    stroke-dasharray: 0.2, 14.8;
+    stroke-dashoffset: 0.1;
+  }
+  
+.hand1 {
+  stroke: #eec40a;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+.hand2 {
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hand--thick {
+  stroke-width: 7;
+}
+
+.hand--second {
+  stroke: rgb(0, 153, 255);
+}
+
+.number{
+  font-size: larger;
+  font-weight: bolder;
+  
+ 
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALOG CLOCK</title>
+    <link rel="stylesheet" href="analogclock.css">
+        
+    </link>
+</head>
+<body >
+    <div class="svg">
+    <svg width='300' height='300' viewBox='-100 -100 200 200'>
+       <circle  class="minute-marker"
+        cx='0'
+        cy ='0'
+        r = '90'
+        pathLength ="60"
+      />
+      <circle class="hour-marker" id="hour-marker"
+      cx='0'
+      cy ='0'
+      r = '90' 
+      pathLength ="60"
+      stroke-dasharray: 0.2, 4.8;
+      stroke-dashoffset: 0.1;
+    
+      
+    />
+    <circle class="hour-markers" id="hour-markers"
+    cx='0'
+    cy ='0'
+    r = '90' 
+    pathLength ="60"
+    
+  
+    
+  />
+    
+    
+    
+    <text id="text" class="text" x="30" y='5' fill="white"></text>
+    <text id="month" class="text" x="43" y='5' fill ='white' ></text>
+    <text class='number' x="-5" y='-82' fill ='white' >12</text>
+    <text class='number' x="86" y='5' fill ='white'>3</text>
+    <text class='number' x="-3" y='94' fill ='white'>6</text>
+    <text class='number' x="-93" y='5' fill ='white'>9</text>
+
+
+    <g id="hour_hand">
+    <line class="hand2" x1="0" y1="0" x2="0" y2="-50" />
+      <line class="hand2 hand--thick" x1="0" y1="-12" x2="0" y2="-50" />
+    </g>
+
+    <g id="minute_hand">
+      <line class="hand1" x1="0" y1="0" x2="0" y2="-80" />
+      <line class="hand1 hand--thick" x1="0" y1="-12" x2="0" y2="-80" />
+    </g>
+
+    <g id="second_hand">
+      <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
+    </g>
+
+
+    </svg>
+    </div>
+    <script src="analogclock.js"></script>
+</body>
+</html>
